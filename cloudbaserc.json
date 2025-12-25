@@ -1,0 +1,22 @@
+{
+  "version": "2.0",
+  "envId": "cloud1-3gy44slx114f4c73",
+  "functionRootPath": "./functions",
+  "functionConfigPath": "./config",
+  "framework": {
+    "name": "bilibili-web",
+    "plugins": {
+      "cloudrun": {
+        "use": "@cloudbase/framework-plugin-cloudrun",
+        "inputs": {
+          "serviceName": "bilibili-web",
+          "containerPort": 3000,
+          "image": "latest"
+        }
+      }
+    }
+  },
+  "cloudrun": {
+    "name": "bilibili-web"
+  }
+}
